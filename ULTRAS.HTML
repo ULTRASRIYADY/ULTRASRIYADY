@@ -6,7 +6,7 @@
     <meta name="description" content="Official website of ULTRAS RIYADY. Join our community on WhatsApp, TikTok, Instagram, and Facebook.">
     <meta name="keywords" content="ULTRAS RIYADY, Social Media, WhatsApp, TikTok, Instagram, Facebook">
     <meta name="author" content="ULTRAS RIYADY">
-    <title>ULTRAS RIYADY OFFICIAL SOCIAL Media</title>
+    <title>ULTRAS RIYADI OFFICIAL SOCIAL MEDIA</title>
     <style>
         body {
             margin: 0;
@@ -16,25 +16,27 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow: hidden; /* Prevent scrolling */
         }
         header, footer {
             background: linear-gradient(45deg, #1e3c72, #2a5298);
             color: #ffd700;
             text-align: center;
-            padding: 10px 0;  /* Reduced padding */
+            padding: 10px 0;
             width: 100%;
-            position: fixed;
-            z-index: 1000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            font-size: 14px;  /* Reduced font size */
+            font-size: 14px;
+            z-index: 1000;
         }
         header {
+            position: fixed;
             top: 0;
         }
         footer {
+            position: fixed;
             bottom: 0;
         }
         main {
@@ -44,13 +46,12 @@
             justify-content: center;
             align-items: flex-start;
             padding: 20px;
-            padding-top: 160px; /* Adjust for smaller header */
-            padding-bottom: 80px; /* Adjust for smaller footer */
+            margin-top: 60px; /* Adjust for header height */
+            margin-bottom: 40px; /* Adjust for footer height */
             margin-left: 20px;
             color: white;
             font-weight: bold;
             text-decoration: underline;
-            overflow-y: auto;
         }
         .icons {
             display: flex;
@@ -75,11 +76,11 @@
         @media (max-width: 600px) {
             header, footer {
                 padding: 5px 0;
-                font-size: 12px;  /* Further reduced font size for small screens */
+                font-size: 12px;
             }
             main {
-                padding-top: 220px;  /* Adjust for smaller header on mobile */
-                padding-bottom: 60px; /* Adjust for smaller footer on mobile */
+                margin-top: 80px; /* Adjust for header height on mobile */
+                margin-bottom: 30px; /* Adjust for footer height on mobile */
                 font-size: 14px;
                 margin-left: 10px;
             }
@@ -99,23 +100,23 @@
         <p>أضغط على الرمز للانضمام:</p>
         <p>Cliquez sur l'icône pour rejoindre :</p>
 
-        <div class="icons">
-            <a href="https://chat.whatsapp.com/FLImIWuB4jV1JpMBWkNlT1" target="_blank">
+        <nav class="icons">
+            <a href="https://chat.whatsapp.com/FLImIWuB4jV1JpMBWkNlT1" target="_blank" aria-label="Join our WhatsApp group">
                 <img src="WHATSAPP.png" alt="Join our WhatsApp group" title="Join our WhatsApp group">
             </a>
-            <a href="https://whatsapp.com/channel/0029Vabn6VhISTkQBTuY1p36" target="_blank">
+            <a href="https://whatsapp.com/channel/0029Vabn6VhISTkQBTuY1p36" target="_blank" aria-label="Join our WhatsApp community">
                 <img src="whatsapp channel logo.jpg" alt="Join our WhatsApp community" title="Join our WhatsApp community">
             </a>
-            <a href="https://www.tiktok.com/@ultras.riyadi?_t=8mZBPTdpbyC&_r=1" target="_blank">
+            <a href="https://www.tiktok.com/@ultras.riyadi?_t=8mZBPTdpbyC&_r=1" target="_blank" aria-label="Follow us on TikTok">
                 <img src="tiktok.png" alt="Follow us on TikTok" title="Follow us on TikTok">
             </a>
-            <a href="https://www.instagram.com/ultras.riyadi?igsh=MXV2b3ZlZ2tsem9ucQ==" target="_blank">
+            <a href="https://www.instagram.com/ultras.riyadi?igsh=MXV2b3ZlZ2tsem9ucQ==" target="_blank" aria-label="Follow us on Instagram">
                 <img src="instagram.png" alt="Follow us on Instagram" title="Follow us on Instagram">
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61555933158007" target="_blank">
+            <a href="https://www.facebook.com/profile.php?id=61555933158007" target="_blank" aria-label="Follow us on Facebook">
                 <img src="facebookkk.png" alt="Follow us on Facebook" title="Follow us on Facebook">
             </a>
-        </div>
+        </nav>
     </main>
     <footer>
         <p>For any feedback, chat with us on the official TikTok page (ULTRAS RIYADI)</p>
